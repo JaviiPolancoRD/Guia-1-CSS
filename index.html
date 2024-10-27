@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modoulo 1- Guía de CSS</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guía Básica de CSS</h1>
+    </header>
+
+    <section>
+        <h2>1. Definición de CSS</h2>
+        <p>CSS (Cascading Style Sheets) es un lenguaje de diseño utilizado para describir la presentación de un documento escrito en HTML o XML. Permite controlar el estilo visual de las páginas web, incluyendo colores, fuentes, márgenes, entre otros. CSS ayuda a separar la presentación del contenido, facilitando la gestión y el mantenimiento de los estilos.</p>
+    </section>
+
+    <section>
+        <h2>2. Funcionamiento Básico de CSS</h2>
+        <p>CSS funciona a través de reglas que aplican estilos a los elementos de un documento HTML. Los navegadores interpretan estas reglas para mostrar el documento. CSS usa un sistema de cascada, herencia y especificidad para controlar cómo se aplican los estilos en caso de conflictos.</p>
+    </section>
+
+    <section>
+        <h2>3. Incluir CSS en un Archivo HTML</h2>
+        <ul>
+            <li><strong>CSS Externo:</strong> Vinculando un archivo CSS externo con la etiqueta <code>&lt;link&gt;</code>:
+                <pre>&lt;link rel="stylesheet" href="estilos.css"&gt;</pre>
+            </li>
+            <li><strong>CSS Interno:</strong> Escribiendo el CSS en una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code>:
+                <pre>&lt;style&gt;
+    body {
+        background-color: #f0f0f0;
+    }
+&lt;/style&gt;</pre>
+            </li>
+            <li><strong>CSS en Línea:</strong> Agregando estilos directamente en los elementos HTML usando el atributo <code>style</code>:
+                <pre>&lt;p style="color: red;"&gt;Texto en rojo.&lt;/p&gt;</pre>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. Definición de una Regla CSS</h2>
+        <p>Una regla CSS es un bloque de código que especifica los estilos a aplicar a elementos HTML. Cada regla consta de un selector y un bloque de declaración.</p>
+    </section>
+
+    <section>
+        <h2>5. Elementos de una Regla CSS</h2>
+        <ul>
+            <li><strong>Regla:</strong> La combinación de un selector y un bloque de declaración.</li>
+            <li><strong>Selector:</strong> Especifica a qué elementos HTML se aplican los estilos. Ejemplo: <code>p</code>, <code>.clase</code>, <code>#id</code>.</li>
+            <li><strong>Bloque de Declaración:</strong> Contiene una o más declaraciones de propiedades y valores, rodeadas por llaves <code>{ }</code>.</li>
+            <li><strong>Propiedad:</strong> Define el aspecto que se modificará (como <code>color</code>, <code>font-size</code>, <code>margin</code>).</li>
+            <li><strong>Valor:</strong> Especifica el valor asignado a la propiedad (por ejemplo, <code>red</code> para el color).</li>
+        </ul>
+        <p>Ejemplo de una regla CSS completa:</p>
+        <pre>p {
+    color: blue;
+    font-size: 14px;
+}</pre>
+    </section>
+
+    <section>
+        <h2>6. Medios CSS</h2>
+        <p>CSS permite aplicar estilos específicos según el dispositivo mediante las <em>media queries</em>, que ayudan a crear sitios web responsivos. Ejemplo:</p>
+        <pre>@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}</pre>
+    </section>
+
+    <section>
+        <h2>7. Comentarios CSS</h2>
+        <p>Los comentarios en CSS se utilizan para añadir notas explicativas sin afectar el código. Se escriben entre <code>/*</code> y <code>*/</code>:</p>
+        <pre>/* Este es un comentario */
+body {
+    background-color: white;
+}</pre>
+    </section>
+
+    <section>
+        <h2>8. Sintaxis de la Definición de las Propiedades CSS</h2>
+        <p>La sintaxis de una propiedad CSS sigue el formato <code>propiedad: valor;</code>. Cada declaración se separa por un punto y coma <code>;</code>. Ejemplo:</p>
+        <pre>h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}</pre>
+    </section>
+
+</body>
+</html>
